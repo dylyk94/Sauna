@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БАНИ НА МОСКОВСКОЙ | Иваново</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sauna: {
+                base: '#111A19',      /* Noir De Vigne (Deep Black-Green) */
+                soft: '#192422',      /* Slightly Lighter Noir */
+                sage: '#284139',      /* Emerald Green (Sections/Cards) */
+                card: '#284139',      /* Emerald Green */
+                primary: '#B86830',   /* Egyptian Earth (Copper/Orange) */
+                primaryHover: '#CD7A40', /* Lighter Copper */
+                text: '#F2F4F3',      /* Off-White Text */
+                muted: '#9CA3AF'      /* Muted Grey */
+              }
+            },
+            fontFamily: {
+              sans: ['Open Sans', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #111A19;
+        color: #F2F4F3;
+        scroll-behavior: smooth;
+      }
+      .glass-panel {
+        background: rgba(17, 26, 25, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111A19;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #284139;
+        border-radius: 4px;
+        border: 1px solid #111A19;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #B86830;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
